@@ -51,8 +51,8 @@ jobs:
 
       - name: Copy New Application
         run: |
-          mkdir -p /home/ubuntu/spring-demo
-          cp target/app.jar /home/ubuntu/spring-demo/app.jar
+          sudo mkdir -p /home/ubuntu/spring-demo
+          sudo cp target/app.jar /home/ubuntu/spring-demo/app.jar
 
       - name: Start Application
         run: |
